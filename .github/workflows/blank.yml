@@ -37,4 +37,5 @@ jobs:
           COVERALLS_GIT_BRANCH: master
           COVERALLS_REPO_TOKEN : ${{ secrets.COVERALLS_REPO_TOKEN }}
       run: |
+          npm i,
           npm run coverall
