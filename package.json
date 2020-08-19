@@ -15,6 +15,7 @@
     "start": "react-scripts start",
     "build": "tsc -p tsconfig.build.json",
     "test": "react-scripts test",
+    "install": "npm install",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook --no-dll --quiet",
