@@ -29,7 +29,6 @@ jobs:
       # Runs a set of commands using1 the runners shell
       - name: Run a multi-line script
         run: |
-          npm run install,
           echo Add other actions to build,
           echo test, and deploy your project.
       - name: Coveralls
@@ -38,4 +37,5 @@ jobs:
           COVERALLS_GIT_BRANCH: master
           COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
         run: |
+          npm run install
           npm run coverall
