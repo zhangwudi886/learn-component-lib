@@ -1,8 +1,14 @@
 import React from "react";
 import { Badge, BadgeProps, badgeColor } from "./badge";
-import { select, text } from "@storybook/addon-knobs";
+import { select, text, withKnobs } from "@storybook/addon-knobs";
 import { Icon } from "../icon/icon";
 type selectType = "positive" | "negative" | "neutral" | "warning" | "error";
+
+export default {
+  title: "Badge",
+  component: Badge,
+  decorators: [withKnobs],
+};
 
 export const knobsBadge = () => (
   <Badge
