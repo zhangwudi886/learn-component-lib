@@ -1,9 +1,7 @@
 import React from "react";
-import { Badge, BadgeProps } from "./badge";
+import { Badge, BadgeProps, badgeColor } from "./badge";
 import { select, text } from "@storybook/addon-knobs";
-import styled from "styled-components";
-import { Icon, IconProps } from "../icon/icon";
-import { badgeColor } from "../shared/styles";
+import { Icon } from "../icon/icon";
 type selectType = "positive" | "negative" | "neutral" | "warning" | "error";
 
 export const knobsBadge = () => (
