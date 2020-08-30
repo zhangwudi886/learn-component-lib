@@ -1,3 +1,5 @@
 {
-  "yarn": false
+  "yarn": false,
+  "branch": "master",
+  "cleanup": false
 }
