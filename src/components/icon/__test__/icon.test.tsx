@@ -4,7 +4,7 @@ import { Icon, IconProps } from "../icon";
 import { icons } from "../../shared/icons";
 
 function IconTest(icon: IconProps["icon"]) {
-  const wrapper = render(<Icon data-testid="icon-path" icon={icon}></Icon>);
+  const wrapper = render(<Icon icon={icon}></Icon>);
   const path = wrapper.queryByTestId("icon-path");
   expect(path).toHaveAttribute("d", icons[icon]);
   cleanup();
@@ -24,13 +24,11 @@ describe(" test Icon component", () => {
     expect(svg).toHaveStyle("display:block");
   });
   it("it should render correct color ", () => {
-    let wrapper = render(<Icon data-testid="icon-path" icon="mobile"></Icon>);
+    let wrapper = render(<Icon icon="mobile"></Icon>);
     let path = wrapper.queryByTestId("icon-path");
     expect(path).toHaveAttribute("color", "black");
     cleanup();
-    wrapper = render(
-      <Icon data-testid="icon-path" icon="mobile" color="blue"></Icon>
-    );
+    wrapper = render(<Icon icon="mobile" color="blue"></Icon>);
     path = wrapper.queryByTestId("icon-path");
     expect(path).toHaveAttribute("color", "blue");
   });

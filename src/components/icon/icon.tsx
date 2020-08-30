@@ -22,10 +22,11 @@ export interface IconProps {
   block?: boolean;
   /** 颜色 */
   color?: string;
+  dataTestid?: string;
 }
 
 export function Icon(props: IconProps) {
-  const { block, icon, color } = props;
+  const { block, icon, color, dataTestid } = props;
   return (
     <Svg
       viewBox="0 0 1024 1024"
@@ -34,11 +35,12 @@ export function Icon(props: IconProps) {
       block={block}
       {...props}
     >
-      <Path d={icons[icon]} color={color} />
+      <Path data-testid={props.dataTestid} d={icons[icon]} color={color} />
     </Svg>
   );
 }
 Icon.defaultProps = {
   block: false,
   color: "black",
+  dataTestid: "icon-path",
 };

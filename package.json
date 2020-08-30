@@ -1,6 +1,6 @@
 {
   "name": "@zhangwudi886/learn-component-lib",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "private": false,
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -16,6 +16,7 @@
     "build": "tsc -p tsconfig.build.json",
     "test": "react-scripts test",
     "install": "npm install",
+    "np": "np",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook --no-dll --quiet",
@@ -69,6 +70,7 @@
     "@types/styled-components": "^5.1.2",
     "babel-loader": "^8.1.0",
     "coveralls": "^3.1.0",
+    "np": "^6.5.0",
     "polished": "^3.6.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
