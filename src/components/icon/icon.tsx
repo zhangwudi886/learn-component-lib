@@ -35,7 +35,7 @@ export function Icon(props: IconProps) {
       block={block}
       {...props}
     >
-      <Path data-testid={props.dataTestid} d={icons[icon]} color={color} />
+      <Path data-testid={dataTestid} d={icons[icon]} color={color} />
     </Svg>
   );
 }
