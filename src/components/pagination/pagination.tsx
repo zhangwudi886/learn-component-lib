@@ -121,7 +121,7 @@ export function Pagination(props: PropsWithChildren<PaginationProps>) {
     if (callback) callback(current);
   }, [callback, current]);
   return (
-    <ul style={{ display: "flex" }}>
+    <PageUl>
       <li>
         <Button appearance="primaryOutline">
           <Icon icon="arrowleft" color={color.primary}></Icon>
@@ -187,7 +187,7 @@ export function Pagination(props: PropsWithChildren<PaginationProps>) {
           <Icon icon="arrowright" color={color.primary}></Icon>
         </Button>
       </li>
-    </ul>
+    </PageUl>
   );
 }
 
